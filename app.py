@@ -10,8 +10,37 @@ st.set_page_config(page_title="Product Scout AI", page_icon="🔎", layout="wide
 
 st.markdown("""
 <style>
-.block-container {max-width: 1150px; padding-top: 2rem;}
-div[data-testid="stRadio"] > div {gap: 1rem;}
+html, body, [class*="css"]  {
+    direction: rtl;
+    text-align: right;
+}
+
+.block-container {
+    max-width: 1150px;
+    padding-top: 2rem;
+    direction: rtl;
+    text-align: right;
+}
+
+div[data-testid="stRadio"] > div {
+    gap: 1rem;
+    direction: rtl;
+}
+
+div[data-testid="stMarkdownContainer"] {
+    direction: rtl;
+    text-align: right;
+}
+
+textarea, input {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+table {
+    direction: rtl;
+    text-align: right;
+}
 </style>
 """, unsafe_allow_html=True)
 
